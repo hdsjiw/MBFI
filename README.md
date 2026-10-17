@@ -1,20 +1,19 @@
-<<<<<<< HEAD
 # MBFI
 
-금융 성향 테스트/ AI 기반 개인화 금융 분석 서비스입니다.
+금융 성향 테스트 & AI 기반 개인화 금융 분석 서비스입니다.
 
 ## 디렉터리 구조
 
 ```text
 MBFI/
-├─ frontend/       # Vue 3 + TypeScript + Vite, Spring Boot API만 호출
-├─ backend/        # Java 21 + Spring Boot, 비즈니스/데이터 계층
-├─ ai/             # Python 3.12 + FastAPI, AI 해석/리포트 계층
+├─ frontend/       # Vue 3 + TypeScript + Vite
+├─ backend/        # Java 21 + Spring Boot
+├─ ai/             # Python 3.12 + FastAPI
 ├─ docker-compose.yml
 └─ .env.example
 ```
 
-환경별 설정은 Backend의 `application.yml`, `application-local.yml`, `application-prod.yml`과 Frontend의 `.env.example`로 분리했습니다. 기본 프로필은 환경변수로 선택합니다(`SPRING_PROFILES_ACTIVE=local|prod`).
+환경별 설정은 Backend의 `application.yml`, `application-local.yml`, `application-prod.yml`과 Frontend의 `.env.example`로 분리했습니다. 
 
 ## 의존성
 
